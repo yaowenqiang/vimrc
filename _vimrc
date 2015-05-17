@@ -148,4 +148,7 @@ augroup END
 onoremap p i(
 onoremap b /return<cr>
 onoremap in( :<c-u>normal! f(vi(<cr>
+onoremap il( :<c-u>normal! F)vi(<cr>
+" <c-u>用来清空命令行中的内容
+"help omap-info
 
