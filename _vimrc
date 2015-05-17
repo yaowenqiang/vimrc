@@ -151,4 +151,15 @@ onoremap in( :<c-u>normal! f(vi(<cr>
 onoremap il( :<c-u>normal! F)vi(<cr>
 " <c-u>用来清空命令行中的内容
 "help omap-info
+onoremap ih :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rkvg_"<cr>
+" execute命令接收一个vimscript字符串并执行。
+"cih menas change inside heading
 
+imap <c-l> <esc>A
+onoremap ah :<c-u>execute "normal! ?^==\\+$\r:nohlsearch\rg_vk0"<cr>
+onoremap in@ :<c-u>execute "normal! /@\r:nohlsearch\rbvf.e"<cr>
+"help pattern-overview
+"TODO 练习没做
+" :help normal
+" :help execute
+":help expr-quote
