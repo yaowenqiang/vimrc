@@ -248,3 +248,32 @@ augroup end
 " 	echo "finally!"
 " endif
 " 
+" set noignorecase
+" if "foo" == "FOO"
+" 	echo "vim is case insensitive."
+" 	elseif "foo" == "foo"
+" 	echo "vim is case sensitive."
+" endif
+
+" set ignorecase
+" if "foo" == "FOO"
+" 	echo "vim is case insensitive."
+" 	elseif "foo" == "foo"
+" 	echo "vim is case sensitive."
+" endif
+
+" set noignorecase
+" if "foo" ==? "FOO"      			"==? 表示强制忽略大小写
+" 	echo "vim is case insensitive."
+" 	elseif "foo" ==? "foo"
+" 	echo "vim is case sensitive."
+" endif
+
+" set ignorecase
+" if "foo" ==# "FOO"      			"==# 表示强制大小写
+" 	echo "vim is case insensitive."
+" 	elseif "foo" ==# "foo"
+" 	echo "vim is case sensitive."
+" endif
+" help ignorecase
+" help expr4
