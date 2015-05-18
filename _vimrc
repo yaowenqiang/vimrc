@@ -230,3 +230,21 @@ augroup end
 " let b:hello = 'World'
 " echo b:hello
 " help internal-variables
+" echom "Foo" | echo "bar"
+" if "somethine"
+" 	echo "INDEED"
+" endif
+" if "9624"
+" 	echo "WHAT?!"
+" endif
+" echom "hello" + 10
+" echom "10hello" + 10
+" echom "hello10" + 10
+" if 0
+" 	echo "nope!"
+" elseif "nope!"
+" 	echo "elseif"
+" else
+" 	echo "finally!"
+" endif
+" 
