@@ -227,3 +227,6 @@ augroup end
 " echo @a
 " echo @"
 " echo @/
+" let b:hello = 'World'
+" echo b:hello
+" help internal-variables
