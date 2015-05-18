@@ -195,3 +195,11 @@ set statusline+=%=       " Switch to right side
 set statusline+=%l       " Current line
 set statusline+=/        " Separator
 set statusline+=%L       " Total Line
+
+" vimscript file settings ---------------------- {{{
+augroup filetype_vim
+	autocmd!
+	autocmd filetype vim setlocal foldmethod=marker
+augroup end
+" }}}
+"help foldlevelstart
