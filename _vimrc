@@ -163,3 +163,35 @@ onoremap in@ :<c-u>execute "normal! /@\r:nohlsearch\rbvf.e"<cr>
 " :help normal
 " :help execute
 ":help expr-quote
+" set statusline=%f    " will see path to the file.
+" set statusline=%f\ -\ FileType:\ %y
+" 
+" set statusline=%f    		" Path to the file
+" set statusline+=\ -\    	" Separator
+" set statusline+=FileType:   " Label
+" set statusline+=%y  		"Filetype of the file
+
+" set statusline+=%l  		"current line
+" set statusline+=/  		"Separator
+" set statusline+=%L  		"Total Lines.
+" set statusline=[%4l]
+" set statusline=Current:\ %4l\ Total:\ %4l
+"Ths status line will look like this:
+" Current:  12 Total: 223
+
+" - make padding on the right.
+" set statusline=Current:\ %-4l\ Total:\ %-4l
+"Ths status line will look like this:
+" Current: 12 Total: 223
+
+" set statusline=%04l
+" pad with zero
+
+"set statusline=
+" set statusline=%.20F    "超过20个字符将会被截断
+"help statusline
+set statusline=%f        " Path to the file
+set statusline+=%=       " Switch to right side
+set statusline+=%l       " Current line
+set statusline+=/        " Separator
+set statusline+=%L       " Total Line
