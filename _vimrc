@@ -203,3 +203,27 @@ augroup filetype_vim
 augroup end
 " }}}
 "help foldlevelstart
+
+" Variables
+
+" let foo = 'bar'
+" echo foo
+
+" let foo = 42
+" echo foo
+" set textwidth=80
+" echo &textwidth
+" set nowrap
+" echo &wrap
+" set wrap
+" echo &wrap
+" let &textwidth = 100
+" set textwidth?
+" let &textwidth = &textwidth + 10
+" set textwidth?
+" let &l:number = 1
+" echo &number
+" let @a = "hello!" " set registers as variables
+" echo @a
+" echo @"
+" echo @/
