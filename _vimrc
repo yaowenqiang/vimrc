@@ -300,3 +300,41 @@ augroup end
 "help call
 "help E124
 "help return
+" function DisplayName(name)
+" 	echom "Hello! My name is :"
+" 	echom a:name
+" endfunction
+" :call DisplayName("Jack")
+
+" function UnscopedDisplayName(name)
+" 	echom "Hello! My name is :"
+" 	echom name
+" endfunction
+" :call UnscopedDisplayName("Jack")
+
+" function Varg(...)
+" 	echo a:0       参数个数
+" 	" echo a:1     第一个参数值
+" 	" echo a:000   参数数组
+" endfunction
+" call Varg("a","b")
+
+" function Varg2(foo,...)
+" 	echo a:foo
+" 	echo a:0
+" 	echo a:1
+" 	echo a:000
+" endfunction
+" call Varg2("a","b","c")
+" function Assign(foo)
+" 	let a:foo = "Nope"
+" 	echo a:foo
+" endfunction
+
+function AssignGood(foo)
+	let foo_tmp = a:foo
+	let foo_tmp = "Yep"
+	echo foo_tmp
+endfunction
+"help function-arguments
+"help local-variables
