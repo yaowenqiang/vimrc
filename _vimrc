@@ -277,3 +277,26 @@ augroup end
 " endif
 " help ignorecase
 " help expr4
+" function Meow()
+" 	echo "Meow"
+" 	return "Meow String!"
+" endfunction
+" call Meow()    调用方式
+" echom Meow()   调用方式
+
+" function TextwidthIsTooWidth()
+" 		if &l:textwidth ># 80
+" 		return 1
+" 		endif
+" endfunction
+" set textwidth=80
+" if TextwidthIsTooWidth()
+" 	echo "WARNING!WIDE TEXT!"
+" endif
+" setlocal textwidth=80
+" if TextwidthIsTooWidth()
+" 	echo "WARNING!WIDE TEXT!"
+" endif
+"help call
+"help E124
+"help return
