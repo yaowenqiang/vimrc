@@ -410,3 +410,9 @@ au GUIEnter * simalt ~x
 " help helpgrep
 " TODO 练习还没做
 
+" Execute Normal!
+" :execute 'normal! gg/foo\<cr>dd
+" :execute "normal! mqA;\<esc>'q
+" TODO,下面的快捷键映射还有问题,换了另外一种方法
+" nnoremap <leader>; :execute "normal! mqA;<Esc>q"<cr>;
+nnoremap <leader>; :s/$/;/g<esc>:nohl<esc>$
