@@ -400,3 +400,13 @@ au GUIEnter * simalt ~x
 " help vsplit
 " TODO 练习还没做
 " Add a mapping to your ~/.vimrc file that opens the previous buffer in a split of your chossing(vertical/horizontal,above/below/left/right)
+" Normal
+" :normal gg
+" :normal G
+" :normal ggdd
+" :normal! G
+" :normal! /foo<cr>
+" :help normal
+" help helpgrep
+" TODO 练习还没做
+
