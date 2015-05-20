@@ -390,3 +390,13 @@ au GUIEnter * simalt ~x
 " :help split()
 " :help join()
 " :help functions
+" Execute
+" execute 'echo "hello world"'
+" execute 'rightbelow vsplit ' . bufname('#')
+" help execute
+" help leftabove
+" help rightbelow
+" help split
+" help vsplit
+" TODO 练习还没做
+" Add a mapping to your ~/.vimrc file that opens the previous buffer in a split of your chossing(vertical/horizontal,above/below/left/right)
