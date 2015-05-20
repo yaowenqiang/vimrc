@@ -331,10 +331,24 @@ augroup end
 " 	echo a:foo
 " endfunction
 
-function AssignGood(foo)
-	let foo_tmp = a:foo
-	let foo_tmp = "Yep"
-	echo foo_tmp
-endfunction
+" function AssignGood(foo)
+" 	let foo_tmp = a:foo
+" 	let foo_tmp = "Yep"
+" 	echo foo_tmp
+" endfunction
 "help function-arguments
 "help local-variables
+
+" echom 100
+" echom 0xff
+" echo 017
+" echo 019
+" echo 100.1
+" echo 5.45e+3
+" echo 15.45e-2
+" echo 15.3e9
+" echo 2 * 2.0
+"help Float
+"help floating-point-precision
+" Enter fullscreen when launch gvim
+au GUIEnter * simalt ~x
