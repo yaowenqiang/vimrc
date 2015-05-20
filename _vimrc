@@ -375,3 +375,18 @@ au GUIEnter * simalt ~x
 " help expr-quote
 "help i_CTRL-V
 "help literal-string
+
+" String functions
+" echom strlen("foo")
+" echom len("foo")
+" echo split("one two three")
+" echo split("one,two,three",',')
+" echom join(['foo','bar'],'...')
+" echom join(split('foo,bar'),';')
+" echom tolower('Foo')
+" echom toupper('Foo')
+" echo split('1 2')
+" echo split('1,,,2',',')
+" :help split()
+" :help join()
+" :help functions
