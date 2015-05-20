@@ -352,3 +352,26 @@ augroup end
 "help floating-point-precision
 " Enter fullscreen when launch gvim
 au GUIEnter * simalt ~x
+" Strings
+" echom "hello"
+" echom "Hello" + "World"
+" echom "3 mice" + "2 Cats"
+" echom 10 + "10.10"
+" echom "Hello " . "World"
+" echom 10 . " foo"
+" echo 10.1 . "foo"
+" echom "foo \"bar\""
+" echom "foo\\bar"
+" echom "foo\nbar"
+" echo "foo\nbar"
+" echom '\n\\'
+" echom 'That''s enough.'
+" if "foo"
+" TODO
+" 	echo "Yes"
+" else
+" 	echo "no"
+" endif
+" help expr-quote
+"help i_CTRL-V
+"help literal-string
