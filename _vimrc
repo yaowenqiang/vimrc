@@ -442,3 +442,30 @@ nnoremap <Leader>sv :source $MYVIMRC<cr>
 nnoremap <leader>lw :match Error / \+$/<cr>
 " :match Error /\v.../
 " help hlsearch
+" help :grep
+" help :make
+" help quickfix
+" Case Study: Grep Opewrator,Part One
+" nnoremap <leader>g :grep -R something .<cr>
+" nnoremap <leader>g :grep -R <cword> .<cr>
+" nnoremap <leader>g :grep -R <cWORD> .<cr>
+" nnoremap <leader>g :grep -R '<cWORD>' .<cr>
+" help escape()
+" help shellescape()
+" nnoremap <leader>g :execute "grep -R '<cWORD>' ."<cr>
+" nnoremap <leader>g :execute "grep -R ". shellescape("<cWORD>")." ."<cr>
+" : echo shellescape("<cWORD>")
+": echom expand("<cWORD>")
+" that's
+" nnoremap <leader>g :execute "grep -R ". shellescape(expand("<cWORD>"))." ."<cr>
+" echom shellescape(expand("<cWORD>"))
+" nnoremap <leader>g :exe "grep -R ". shellescape(expand("<cWORD>"))." ."<cr>
+" nnoremap <leader>g :exe "grep! -R ". shellescape(expand("<cWORD>"))." ."<cr>
+" nnoremap <leader>g :exe "grep! -R ". shellescape(expand("<cWORD>"))." ."<cr>:copen<cr>
+nnoremap <leader>g :silent execute "grep! -R ". shellescape(expand("<cWORD>"))." ."<cr>:copen<cr>
+" help cword
+" help cnext
+" help cprevious
+" help expand
+" help copen
+" help silent
