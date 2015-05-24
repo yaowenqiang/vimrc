@@ -416,3 +416,19 @@ au GUIEnter * simalt ~x
 " TODO,下面的快捷键映射还有问题,换了另外一种方法
 " nnoremap <leader>; :execute "normal! mqA;<Esc>q"<cr>;
 nnoremap <leader>; :s/$/;/g<esc>:nohl<esc>$
+nnoremap <leader>ca :execute 'normal! ggVG"*yG'<cr>
+nnoremap <leader>cp :execute 'normal! "*pG'<cr>
+nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <Leader>sv :source $MYVIMRC<cr>
+
+"Basic Regular Expressions
+
+" set hlsearch incsearch
+" :execute "normal! gg/print\<cr>"
+" :execute "normal! gg/print\<cr>n"
+" :execute "normal! G?print\<cr>"
+" :execute "normal! gg/for .* in .*\<cr>"
+" :execute "normal! gg/for .\\+ in .\\+:\<cr>"
+" /print .\+
+" execute 'normal! gg/for .\+ in .\+;\<cr>'
+" execute "normal! gg" .'/for .\+ in .\+;'."\<cr>"
