@@ -432,3 +432,13 @@ nnoremap <Leader>sv :source $MYVIMRC<cr>
 " /print .\+
 " execute 'normal! gg/for .\+ in .\+;\<cr>'
 " execute "normal! gg" .'/for .\+ in .\+;'."\<cr>"
+" execute "normal! gg" . '/\vfor .+ in .+;' . "\<cr>"
+" help magic
+" help pattern-overview
+" help match
+" highlight MyGroup ctermbg=green guibg=green
+" match MyGroup /TODO/
+" TODO 练习还没做完
+nnoremap <leader>lw :match Error / \+$/<cr>
+" :match Error /\v.../
+" help hlsearch
