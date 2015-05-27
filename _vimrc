@@ -462,7 +462,7 @@ nnoremap <leader>lw :match Error / \+$/<cr>
 " nnoremap <leader>g :exe "grep -R ". shellescape(expand("<cWORD>"))." ."<cr>
 " nnoremap <leader>g :exe "grep! -R ". shellescape(expand("<cWORD>"))." ."<cr>
 " nnoremap <leader>g :exe "grep! -R ". shellescape(expand("<cWORD>"))." ."<cr>:copen<cr>
-nnoremap <leader>g :silent execute "grep! -R ". shellescape(expand("<cWORD>"))." ."<cr>:copen<cr>
+" nnoremap <leader>g :silent execute "grep! -R ". shellescape(expand("<cWORD>"))." ."<cr>:copen<cr>
 " help cword
 " help cnext
 " help cprevious
