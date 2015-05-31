@@ -477,3 +477,4 @@ set errorformat=%m\ in\ %f\ on\ line\ %l,%-GErrors\ parsing\ %f,%-G
 " h quickfix
 " h makeprg
 " h errorformat
+" http://stackoverflow.com/questions/7272088/validate-php-syntax-in-vim
