@@ -1,3 +1,4 @@
+*.orig
 vimfiles/
 !vimfiles/plugin/grep-operator.vim
 vim74/

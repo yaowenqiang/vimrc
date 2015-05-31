@@ -469,3 +469,11 @@ nnoremap <leader>lw :match Error / \+$/<cr>
 " help expand
 " help copen
 " help silent
+set autochdir
+" nnoremap <f5> :!php -l %<cr>
+nnoremap <f5> :update<bar>make<bar>cwindow<cr>
+set makeprg=php\ -l\ %
+set errorformat=%m\ in\ %f\ on\ line\ %l,%-GErrors\ parsing\ %f,%-G
+" h quickfix
+" h makeprg
+" h errorformat

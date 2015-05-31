@@ -11,3 +11,5 @@ function! GrepOperator(type)
 		echom shellescape(@@)
 endfunction
 " help visualmode
+" help `< 
+" help `> 
